@@ -1,9 +1,8 @@
 @startuml
+skinparam classAttributeIconSize 0
 title Operaciones aritmeticas basicas - Diagrama de clases (POO)
 
-actor "Usuario" as Usuario
-
-class OperacionesAritmetica {
+class "OperacionesAritmeticas" as App {
   {static} + main(String[] args) : void
   {static} + leerEntero(Scanner lector, String mensaje) : int
   {static} + sumar(int a, int b) : int
@@ -13,5 +12,6 @@ class OperacionesAritmetica {
   {static} + potencia(int base, int exponente) : long
 }
 
-Usuario --> OperacionesAritmetica : ejecuta / ingresa numeros enteros
+class "Usuario" as Usuario <<actor>>
+Usuario --> App : ejecuta e ingresa numeros enteros
 @enduml

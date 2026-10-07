@@ -1,0 +1,14 @@
+@startuml
+left to right direction
+title Casos de uso - Operaciones aritmeticas
+
+actor "Usuario" as Usuario
+
+usecase "Ingresar dos numeros enteros" as CU1
+usecase "Ver suma, resta, multiplicacion y division" as CU2
+usecase "Ver la potencia a elevado a b" as CU3
+
+Usuario --> CU1
+Usuario --> CU2
+Usuario --> CU3
+@enduml
