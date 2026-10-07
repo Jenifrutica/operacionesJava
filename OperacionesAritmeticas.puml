@@ -1,0 +1,17 @@
+@startuml
+title Operaciones aritmeticas basicas - Diagrama de clases (POO)
+
+actor "Usuario" as Usuario
+
+class OperacionesAritmetica {
+  {static} + main(String[] args) : void
+  {static} + leerEntero(Scanner lector, String mensaje) : int
+  {static} + sumar(int a, int b) : int
+  {static} + restar(int a, int b) : int
+  {static} + multiplicar(int a, int b) : int
+  {static} + dividir(int a, int b) : int
+  {static} + potencia(int base, int exponente) : long
+}
+
+Usuario --> OperacionesAritmetica : ejecuta / ingresa numeros enteros
+@enduml
